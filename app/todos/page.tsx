@@ -6,7 +6,7 @@ async function fetchTodos() {
   return prisma.todo.findMany();
 }
 
-export async function toggleTodo(
+async function toggleTodo(
   id: string,
   done: boolean
 ) {
